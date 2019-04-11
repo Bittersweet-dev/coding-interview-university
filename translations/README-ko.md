@@ -436,49 +436,43 @@ OR:
 **어떤 사람들은 이 책들을 추천한다. 하지만 만약 당신이 소프트웨어 엔지니어링 분야에 오랜 경험이 있고, 그로 인해 훨씬 더 어려운 인터뷰를 볼 것이라 생각하지 않는다면, 나는 이 책들을 공부하는 것이 너무 과하다고 생각한다:**
 
 - [ ] [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
-    - As a review and problem recognition
-    - The algorithm catalog portion is well beyond the scope of difficulty you'll get in an interview.
-    - This book has 2 parts:
-        - class textbook on data structures and algorithms
-            - pros:
-                - is a good review as any algorithms textbook would be
-                - nice stories from his experiences solving problems in industry and academia
-                - code examples in C
-            - cons:
-                - can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects
-                - chapters 7, 8, 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
-                - don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material.
-        - algorithm catalog:
-            - this is the real reason you buy this book.
-            - about to get to this part. Will update here once I've made my way through it.
-    - To quote Yegge: "More than any other book it helped me understand just how astonishingly commonplace
-        (and important) graph problems are – they should be part of every working programmer's toolkit. The book also
-        covers basic data structures and sorting algorithms, which is a nice bonus. But the gold mine is the second half
-        of the book, which is a sort of encyclopedia of 1-pagers on zillions of useful problems and various ways to solve
-        them, without too much detail. Almost every 1-pager has a simple picture, making it easy to remember. This is a
-        great way to learn how to identify hundreds of problem types."
-    - Can rent it on kindle
-    - Half.com is a great resource for textbooks at good prices.
-    - Answers:
+    - 복습과 문제인식 용
+    - 알고리즘 카탈로그 부분은 당신이 면접에서 마주하게 될 난이도 이상을 다룬다.
+    - 이 책은 2 파트로 구성되어 있다.:
+        - 자료구조 및 알고리즘에 대한 강의 교재
+            - 장점:
+                - 어떠한 알고리즘 교과서라도 복습하는 데에는 도움이 된다.
+                - 산업과 학술 분야에서 저자가 문제를 했던 경험들은 좋은 이야깃거리이다.
+                - C 언어로 된 코드 예제들.
+            - 단점:
+                - CLRS 만큼이나 dens 하거나 impentrable 할 수 있으며, 몇 몇 주제에 대해서는 CLRS가 더 나은 대안이 될지도 모른다.
+                - 몇 가지 항목들은 잘 설명돼있지 않거나 내 수준보다 높은 수준을 요구하기 때문에, 챕터 7, 8, 9는 따라 하기 힘들 수 있다.
+                - (오해 없길 바란다) 나는 Skiena의 교육 방식, 방법론 들을 좋아하지만, Stony Brook의 것들은 회의적이다.
+        - 알고리즘 카탈로그:
+            - 이 부분이 당신이 이 책을 사야하는 진짜 이유이다.
+            - 이 부분을 거의 다 읽었다. 이 부분은 책을 다 읽어본 후에 업데이트 할 것이다.
+    - Yegge를 인용하자면, "그래프 문제가 얼마나 astonishingly 일반 상식인지 이해하는 데 어떤 책 보다도 도움이 되었다(그래프 문제는 모든 현업 프로그래머의 툴킷에 들어가야 한다.) 또한 이 책은 기초적인 자료 구조와 정렬 알고리즘들을 다룬다. 하지만 진짜 꿀은 zillions 유용한 문제에 대한 일종의 1-pagers의 백과사전같은(지나치게 자세하지도 않다) 책의 뒤쪽 절반이다. 거의 대부분의 1-pager는 기억하기 쉽게 해주는 간단한 사진이 있다. 이것은 수 백가지 문제들의 유형을 어떻게 식별할 수 있는지 배우기 위한 좋은 방법이다."
+    - 킨들에서 읽을 수 있다.
+    - Half.com 은 괜찮은 가격에 교과서를 마련할 수 있는 좋은 사이트이다.
+    - 해설지:
         - [Solutions](http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
         - [Solutions](http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/)
     - [Errata](http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata)
 
 - [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
-    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently.
-    - To quote Yegge: "But if you want to come into your interviews *prepped*, then consider deferring your application until you've made your way through that book."
-    - Half.com is a great resource for textbooks at good prices.
-    - aka CLR, sometimes CLRS, because Stein was late to the game
+    - **중요:** 이 책을 읽는 것은 썩 효율적이지 않다. 이 책은 알고리즘과 자료구조를 복습하는 데에는 좋지만, 좋은 코드를 작성하는 것에 대해서는 가르쳐주지 않는다. 당신은 decent 솔루션의 코드를 효율적으로 작성할 수 있어야 한다.
+    - Yegge를 인용하자면, "하지만 당신의 면접이 *prepped*하길 원한다면, 이 책을 다 읽기 전 까지는 당신의 어플리케이션을 deffering 하는 것을 고려하라."
+    - Half.com 은 괜찮은 가격에 교과서를 마련할 수 있는 좋은 사이트이다.
+    - CLR로도, CLRS로도 알려져 있다. (Stein이 너무 늙었기 때문에.)
 
 - [ ] [Programming Pearls](http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880)
-    - The first couple of chapters present clever solutions to programming problems (some very old using data tape) but
-      that is just an intro. This a guidebook on program design and architecture, much like Code Complete, but much shorter.
+    - 처음 몇 챕터는 프로그래밍 문제(어떤 문제는 매우 오래됐다)에 대한 영리한 해결책을 제시하지만 도입부일 뿐이다. 이 책은 Code Complte와 같은 프로그램 디자인과 구조에 대한 가이드북이지만 훨씬 짧다.
 
 - ~~"Algorithms and Programming: Problems and Solutions" by Shen~~
 
-    - A fine book, but after working through problems on several pages I got frustrated with the Pascal, do while loops, 1-indexed arrays, and unclear post-condition satisfaction results.
+    - 괜찮은 책이지만, 몇 가지 문제를 풀어보고 난 뒤 Pascal의 do while 루프들, 1-indexed 배열, 명확하지 않은 post-condition satisfaction 결과에 완전히 좌절했다.
 
-    - Would rather spend time on coding problems from another book or online coding problems.
+    - 차라리 다른 책이나 온라인 코딩 문제에 시간을 쏟는 편이 나을 수도 있다.
 
 
 ## 시작하기 전에
@@ -607,9 +601,7 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
 - [ ] [Cheat sheet](http://bigocheatsheet.com/)
 
 
-    If some of the lectures are too mathy, you can jump down to the bottom and
-    watch the discrete mathematics videos to get the background knowledge.
-
+    만약 일부 강의가 깊은 수학적 지식을 요구한다면, 배경지식을 얻기 위해 아래에 있는 개별적인 수학에 대한 비디오를 먼저 보라.
 ## 자료구조
 
 - ### 배열
