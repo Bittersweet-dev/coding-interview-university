@@ -621,74 +621,74 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
             - 배열 메소드 등의 기능을 활용하지 않으면서 정수 배열에 메모리를 할당할 수 있어야 함
             - 16으로 시작하거나 시작하는 숫자가 크다면 2의 제곱수(16, 32, 64, 128)로 시작
         - [ ] size() - 항목의 개수
-        - [ ] capacity() - 들어갈 수 있는 항목의 최대 개수number of items it can hold
+        - [ ] capacity() - 들어갈 수 있는 항목의 최대 개수
         - [ ] is_empty()
         - [ ] at(index) - 인덱스에 있는 항목을 돌려주고, 인덱스가 범위 밖이면 에러를 냄
         - [ ] push(item)
         - [ ] insert(index, item) - index에 item을 삽입하고 기존 인덱스의 값부터 쭉 오른쪽으로 쉬프트
         - [ ] prepend(item) - 맨 앞에 원소를 삽입
         - [ ] pop() - 마지막 원소를 삭제하고 값을 돌려준다
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
-            - when you reach capacity, resize to double the size
-            - when popping an item, if size is 1/4 of capacity, resize to half
+        - [ ] delete(index) - 인덱스에 있는 항목을 삭제하고, 이어지는 모든 요소를 왼쪽으로 한 칸씩 당긴다.
+        - [ ] remove(item) - 값을 찾아서 해당 값에 할당된 인덱스를 제거한다. (같은 값이 여러 곳에 있어도 모두 제거한다.)
+        - [ ] find(item) - 값을 찾아서 해당 값에 할당된 인덱스 중 첫 번째 것을 반환하며, 찾지 못할 경우 -1을 반환한다.
+        - [ ] resize(new_capacity) // private 함수
+            - 배열이 다 찼을 경우, 크기를 두 배로 늘린다.
+            - 항목이 삭제될 때, 남은 크기가 전체 크기의 1/4일 경우 전체 크기를 절반으로 줄인다.
     - [ ] Time
-        - O(1) to add/remove at end (amortized for allocations for more space), index, or update
-        - O(n) to insert/remove elsewhere
+        - 맨 뒤에 추가/제거 하거나, 값에 접근하거나, 수정하는 것 모두 O(1) 의 시간이 걸린다. (추가 공간을 할당하는 작업은 여러 번에 걸쳐 수행된다.)
+        - 다른 장소에 삽입/제거 하는 경우 O(n) 의 시간이 걸린다.
     - [ ] Space
-        - contiguous in memory, so proximity helps performance
+        - 메모리 상에 연속적으로 저장돼있으며, 이러한 근접성이 성능을 향상시킨다.
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
 - ### 링크드 리스트
-    - [ ] Description:
+    - [ ] 설명:
         - [ ] [Singly Linked Lists (video)](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
         - [ ] [CS 61B - Linked Lists (video)](https://www.youtube.com/watch?v=sJtJOtXCW_M&list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd&index=5)
     - [ ] [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
-            - not the whole video, just portions about Node struct and memory allocation.
-    - [ ] Linked List vs Arrays:
+            - 노드 구조와 메모리 할당에 대한 부분만 유용하다.
+    - [ ] 링크드 리스트 vs 배열:
         - [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
         - [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
     - [ ] [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-    - [ ] Gotcha: you need pointer to pointer knowledge:
-        (for when you pass a pointer to a function that may change the address where that pointer points)
-        This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
+    - [ ] 잡았다! 당신은 이제 포인터의 포인터에 대한 지식이 필요하다.
+        (포인터가 함수를 통과할 때 포인터가 가리키는 주소가 변할 수 있기 때문.)
+        이 페이지는 포인터의 포인터 개념을 확실히 하기 위한 것이다. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
         - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-    - [ ] implement (I did with tail pointer & without):
-        - [ ] size() - returns number of data elements in list
-        - [ ] empty() - bool returns true if empty
-        - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
-        - [ ] push_front(value) - adds an item to the front of the list
-        - [ ] pop_front() - remove front item and return its value
-        - [ ] push_back(value) - adds an item at the end
-        - [ ] pop_back() - removes end item and returns its value
-        - [ ] front() - get value of front item
-        - [ ] back() - get value of end item
-        - [ ] insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index
-        - [ ] erase(index) - removes node at given index
-        - [ ] value_n_from_end(n) - returns the value of the node at nth position from the end of the list
-        - [ ] reverse() - reverses the list
-        - [ ] remove_value(value) - removes the first item in the list with this value
-    - [ ] Doubly-linked List
+    - [ ] 구현 (나는 tail 포인터가 있는 버전과 없는 버전 모두 구현했다.):
+        - [ ] size() - 리스트 안의 데이터 개수를 반환한다.
+        - [ ] empty() - 리스트가 비었을 때 참 값을 반환한다.
+        - [ ] value_at(index) - n 번째 항목의 값을 반환한다. (0 번째 항목부터 시작)
+        - [ ] push_front(value) - 리스트의 맨 앞에 항목을 추가한다.
+        - [ ] pop_front() - 맨 앞의 항목을 제거하고 항목의 값을 반환한다.
+        - [ ] push_back(value) - 리스트의 맨 뒤에 항목을 추가한다.
+        - [ ] pop_back() - 맨 뒤의 항목을 제거하고 항목의 값을 반환한다.
+        - [ ] front() - 맨 앞의 항목 값을 가져온다.
+        - [ ] back() - 맨 뒤의 항목 값을 가져온다.
+        - [ ] insert(index, value) - 인덱스가 가리키는 곳에 값을 삽입한다. 즉, 원래 있던 노드는 삽입된 노드가 가리키는 뒤로 이동한다.
+        - [ ] erase(index) - 주어진 인덱스가 가리키는 노드를 제거한다.
+        - [ ] value_n_from_end(n) - 리스트의 끝에서부터 n 번째 노드에 해당하는 값을 반환한다.
+        - [ ] reverse() - 리스트의 순서를 뒤집는다.
+        - [ ] remove_value(value) - 주어진 값에 해당하는 첫 번째 값을 제거한다.
+    - [ ] 이중 링크드 리스트
         - [Description (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
-        - No need to implement
+        - 구현할 필요 없음.
 
 - ### 스택
     - [ ] [Stacks (video)](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
     - [ ] [Using Stacks Last-In First-Out (video)](https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4)
-    - [ ] Will not implement. Implementing with array is trivial.
+    - [ ] 구현하지 않을 것임. 배열로 구현하는 것은 너무 쉬움.
 
 - ### 큐
     - [ ] [Using Queues First-In First-Out(video)](https://archive.org/details/0102WhatYouShouldKnow/05_03-usingQueuesForFirst-inFirst-out.mp4)
     - [ ] [Queue (video)](https://www.coursera.org/learn/data-structures/lecture/EShpq/queue)
     - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
     - [ ] [Priority Queues (video)](https://archive.org/details/0102WhatYouShouldKnow/05_04-priorityQueuesAndDeques.mp4)
-    - [ ] Implement using linked-list, with tail pointer:
-        - enqueue(value) - adds value at position at tail
-        - dequeue() - returns value and removes least recently added element (front)
+    - [ ] tail 포인터를 이용한 링크드 리스트로 구현한 경우:
+        - enqueue(value) - tail이 가리키는 위치에 값을 추가함.
+        - dequeue() - 맨 처음 추가된 값을 반환하고 리스트에서 삭제함.
         - empty()
-    - [ ] Implement using fixed-sized array:
+    - [ ] 고정크기 배열로 구현한 경우:
         - enqueue(value) - adds item at end of available storage
         - dequeue() - returns value and removes least recently added element
         - empty()
@@ -721,26 +721,26 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
             - [Instant Uploads And Storage Optimization In Dropbox (video)](https://www.coursera.org/learn/data-structures/lecture/DvaIb/instant-uploads-and-storage-optimization-in-dropbox)
             - [Distributed Hash Tables (video)](https://www.coursera.org/learn/data-structures/lecture/tvH8H/distributed-hash-tables)
 
-    - [ ] implement with array using linear probing
-        - hash(k, m) - m is size of hash table
-        - add(key, value) - if key already exists, update value
+    - [ ] 선형 탐색 및 배열을 이용한 구현
+        - hash(k, m) - m 은 해시 테이블의 크기이다.
+        - add(key, value) - 키가 이미 존재한다면 값을 수정함.
         - exists(key)
         - get(key)
         - remove(key)
 
-## More Knowledge
+## 추가 지식
 
-- ### Binary search
+- ### 이진 탐색
     - [ ] [Binary Search (video)](https://www.youtube.com/watch?v=D5SrAga1pno)
     - [ ] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
     - [ ] [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
-    - [ ] Implement:
-        - binary search (on sorted array of integers)
-        - binary search using recursion
+    - [ ] 구현:
+        - 정렬된 정수 배열을 이용한 이진 탐색
+        - 재귀를 이용한 이진 탐색
 
-- ### Bitwise operations
-    - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
-    - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
+- ### 비트 연산
+    - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - 2의 거듭제곱 형태를 띈 것들을 숙지해야 한다. (2^1 to 2^16 and 2^32)
+    - [ ] 비트를 다루는 것을 꼼꼼히 이해하자: &, |, ^, ~, >>, <<
         - [ ] [words](https://en.wikipedia.org/wiki/Word_(computer_architecture))
         - [ ] Good intro:
             [Bit Manipulation (video)](https://www.youtube.com/watch?v=7jkIUgLC29I)
@@ -765,34 +765,34 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
     - [ ] absolute value:
         - [Absolute Integer](http://bits.stephan-brumme.com/absInteger.html)
 
-## Trees
+## 트리
 
 - ### Trees - Notes & Background
     - [ ] [Series: Core Trees (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/ovovP/core-trees)
     - [ ] [Series: Trees (video)](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
-    - basic tree construction
-    - traversal
-    - manipulation algorithms
-    - BFS (breadth-first search)
+    - 기본적인 트리 생성
+    - 순회
+    - 알고리즘 다루기
+    - BFS (넓이 우선 탐색)
         - [MIT (video)](https://www.youtube.com/watch?v=s-CYnVz-uh4&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=13)
         - level order (BFS, using queue)
-            time complexity: O(n)
-            space complexity: best: O(1), worst: O(n/2)=O(n)
-    - DFS (depth-first search)
+            시간 복잡도: O(n)
+            공간 복잡도: 최선의 경우 O(1), 최악의 경우 O(n/2)=O(n)
+    - DFS (깊이 우선 탐색)
         - [MIT (video)](https://www.youtube.com/watch?v=AfSk24UTFS8&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=14)
         - notes:
-            time complexity: O(n)
-            space complexity:
-                best: O(log n) - avg. height of tree
-                worst: O(n)
-        - inorder (DFS: left, self, right)
-        - postorder (DFS: left, right, self)
-        - preorder (DFS: self, left, right)
+            시간 복잡도: O(n)
+            공간 복잡도:
+                최선의 경우 O(log n) - avg. height of tree
+                최악의 경우 O(n)
+        - 중위 순회 (DFS: left, self, right)
+        - 후위 순회 (DFS: left, right, self)
+        - 전위 순회 (DFS: self, left, right)
 
-- ### Binary search trees: BSTs
+- ### 이진 탐색 트리: BSTs
     - [ ] [Binary Search Tree Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
     - [ ] [Series (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/p82sw/core-introduction-to-binary-search-trees)
-        - starts with symbol table and goes through BST applications
+        - symbol table 부터 시작해서 BTS 응용까지
     - [ ] [Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
     - [ ] [MIT (video)](https://www.youtube.com/watch?v=9Jry5-82I68)
     - C/C++:
