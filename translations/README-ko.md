@@ -806,21 +806,21 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
         - [ ] [Check if a binary tree is binary search tree or not (video)](https://www.youtube.com/watch?v=yEwSGhSsT0U&index=35&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
         - [ ] [Delete a node from Binary Search Tree (video)](https://www.youtube.com/watch?v=gcULXE7ViZw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36)
         - [ ] [Inorder Successor in a binary search tree (video)](https://www.youtube.com/watch?v=5cPbNCrdotA&index=37&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
-    - [ ] Implement:
-        - [ ] insert    // insert value into tree
-        - [ ] get_node_count // get count of values stored
-        - [ ] print_values // prints the values in the tree, from min to max
+    - [ ] 구현:
+        - [ ] insert    // 트리에 값 삽입
+        - [ ] get_node_count // 저장된 값들의 개수
+        - [ ] print_values // min 에서 max까지 트리의 모든 값 출력
         - [ ] delete_tree
-        - [ ] is_in_tree // returns true if given value exists in the tree
-        - [ ] get_height // returns the height in nodes (single node's height is 1)
-        - [ ] get_min   // returns the minimum value stored in the tree
-        - [ ] get_max   // returns the maximum value stored in the tree
+        - [ ] is_in_tree // 트리 안에 값이 있으면 true 반환
+        - [ ] get_height // 노드의 높이 반환 (단일 노드일 경우 1 반환)
+        - [ ] get_min   // 트리에 저장된 최소값 반환
+        - [ ] get_max   // 트리에 저장된 최대값 반환
         - [ ] is_binary_search_tree
         - [ ] delete_value
-        - [ ] get_successor // returns next-highest value in tree after given value, -1 if none
+        - [ ] get_successor // 트리에서 주어진 값 다음으로 높은 값 반환. 없을 경우 -1 반환.
 
-- ### Heap / Priority Queue / Binary Heap
-    - visualized as a tree, but is usually linear in storage (array, linked list)
+- ### 힙 / 우선순위 큐 / 이진 힙
+    - 트리처럼 그려졌지만 보통 선형적으로 저장됨 (배열, 링크드 리스트)
     - [ ] [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
     - [ ] [Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/2OpTs/introduction)
     - [ ] [Naive Implementations (video)](https://www.coursera.org/learn/data-structures/lecture/z3l9N/naive-implementations)
@@ -835,34 +835,34 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
     - [ ] [MIT: Heaps and Heap Sort (video)](https://www.youtube.com/watch?v=B7hVxCmfPtM&index=4&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
     - [ ] [CS 61B Lecture 24: Priority Queues (video)](https://www.youtube.com/watch?v=yIUFT6AKBGE&index=24&list=PL4BBB74C7D2A1049C)
     - [ ] [Linear Time BuildHeap (max-heap)](https://www.youtube.com/watch?v=MiyLo8adrWw)
-    - [ ] Implement a max-heap:
+    - [ ] max-힙 구현:
         - [ ] insert
-        - [ ] sift_up - needed for insert
-        - [ ] get_max - returns the max item, without removing it
-        - [ ] get_size() - return number of elements stored
-        - [ ] is_empty() - returns true if heap contains no elements
-        - [ ] extract_max - returns the max item, removing it
-        - [ ] sift_down - needed for extract_max
-        - [ ] remove(i) - removes item at index x
-        - [ ] heapify - create a heap from an array of elements, needed for heap_sort
+        - [ ] sift_up - 삽입을 위해 필요함.
+        - [ ] get_max - 최대값을 제거하지 않고 반환함
+        - [ ] get_size() - 저장된 항목들의 수를 반환함
+        - [ ] is_empty() - 힙이 비어있을 경우 true를 반환함
+        - [ ] extract_max - 최대값을 반환하면서 제거함.
+        - [ ] sift_down - extract_max를 위해 필요함.
+        - [ ] remove(i) - 지정된 인덱스에 있는 값을 제거함
+        - [ ] heapify - 배열로부터 힙을 생성함, 이를 위해 heap_sort 필요함.
         - [ ] heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap
             - note: using a min heap instead would save operations, but double the space needed (cannot do in-place).
 
-## Sorting
+## 정렬
 
 - [ ] Notes:
-    - Implement sorts & know best case/worst case, average complexity of each:
-        - no bubble sort - it's terrible - O(n^2), except when n <= 16
+    - 정렬 구현하기 & 최선/최악의 경우 숙지하기, 다음 각각의 평균 복잡도 알기:
+        - 거품 정렬 금지! - 끔찍한 성능 - O(n^2), n <= 16 일 때 예외적으로 사용
     - [ ] stability in sorting algorithms ("Is Quicksort stable?")
         - [Sorting Algorithm Stability](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)
         - [Stability In Sorting Algorithms](http://stackoverflow.com/questions/1517793/stability-in-sorting-algorithms)
         - [Stability In Sorting Algorithms](http://www.geeksforgeeks.org/stability-in-sorting-algorithms/)
         - [Sorting Algorithms - Stability](http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/stability.pdf)
     - [ ] Which algorithms can be used on linked lists? Which on arrays? Which on both?
-        - I wouldn't recommend sorting a linked list, but merge sort is doable.
+        - 나는 링크드 리스트를 정렬하는 것을 추천하지 않는다. 하지만 병합 정렬은 할 만 하다.
         - [Merge Sort For Linked List](http://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-- For heapsort, see Heap data structure above. Heap sort is great, but not stable.
+- 힙 정렬을 위해서 우선 위에 설명한 힙의 데이터 구조를 먼저 보라. 힙 정렬은 훌륭하지만 안정적이지는 않다.
 
 - [ ] [Sedgewick - Mergesort (5 videos)](https://www.youtube.com/watch?v=4nKwesx_c8E&list=PLe-ggMe31CTeunC6GZHFBmQx7EKtjbGf9)
     - [ ] [1. Mergesort](https://www.youtube.com/watch?v=4nKwesx_c8E&list=PLe-ggMe31CTeunC6GZHFBmQx7EKtjbGf9&index=1)
@@ -900,13 +900,13 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
     - [ ] [Implementation (C)](https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c)
     - [ ] [Implementation (Python)](https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py)
 
-- [ ] Implement:
-    - [ ] Mergesort: O(n log n) average and worst case
-    - [ ] Quicksort O(n log n) average case
-    - Selection sort and insertion sort are both O(n^2) average and worst case
-    - For heapsort, see Heap data structure above.
+- [ ] 구현:
+    - [ ] 병합 정렬: O(n log n) 평균과 최악의 경우
+    - [ ] 퀵 정렬 O(n log n) 평균적인 경우
+    - 선택 정렬과 삽입 정렬 모두 평균과 최악의 경우에서 O(n^2)임.
+    - 힙정렬에 관해서는, 위의 힙 데이터 구조를 보라.
 
-- [ ] Not required, but I recommended them:
+- [ ] 요구사항은 아니지만 개인적으로 추천하는 것들:
     - [ ] [Sedgewick - Radix Sorts (6 videos)](https://www.youtube.com/playlist?list=PLe-ggMe31CTcNvUX9E3tQeM6ntrdR8e53)
         - [ ] [1. Strings in Java](https://www.youtube.com/watch?v=zRzU-FWsjNU&list=PLe-ggMe31CTcNvUX9E3tQeM6ntrdR8e53&index=6)
         - [ ] [2. Key Indexed Counting](https://www.youtube.com/watch?v=CtgKYmXs62w&list=PLe-ggMe31CTcNvUX9E3tQeM6ntrdR8e53&index=5)
@@ -920,7 +920,7 @@ Anki format의 내 flashcard 데이터베이스: https://ankiweb.net/shared/info
     - [ ] [Randomization: Matrix Multiply, Quicksort, Freivalds' algorithm (video)](https://www.youtube.com/watch?v=cNB2lADK3_s&index=8&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
     - [ ] [Sorting in Linear Time (video)](https://www.youtube.com/watch?v=pOKy3RZbSws&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&index=14)
 
-If you need more detail on this subject, see "Sorting" section in [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
+만약 이 주제에 대해서 더 자세한 설명이 필요하다면, [Additional Detail on Some Subjects](#additional-detail-on-some-subjects) 에 있는 "정렬" 섹션을 보라.
 
 ## 그래프
 
@@ -999,12 +999,12 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
         - [ ] [What Is Tail Recursion Why Is It So Bad?](https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad)
         - [ ] [Tail Recursion (video)](https://www.youtube.com/watch?v=L1jjXGfxozc)
 
-- ### Dynamic Programming
-    - **NOTE:** DP is a valuable technique, but it is not mentioned on any of the prep material Google provides. But you could get a problem where DP provides an optimal solution. So I'm including it.
-    - This subject can be pretty difficult, as each DP soluble problem must be defined as a recursion relation, and coming up with it can be tricky.
-    - I suggest looking at many examples of DP problems until you have a solid understanding of the pattern involved.
-    - [ ] Videos:
-        - the Skiena videos can be hard to follow since he sometimes uses the whiteboard, which is too small to see
+- ### 동적 계획법
+    - **NOTE:** 동적 계획법은 중요한 기술이지만, 구글에서 제공하는 어떠한 준비 사항에도 언급되지 않았다. 하지만 당신은 동적 계획법이 최적의 해답인 경우 문제를 겪을 수도 있다. 따라서 나는 이 부분을 포함했다.
+    - 동적 계획법으로 풀 수 있는 문제는 반드시 재귀 형태로 정의되어야 하기 때문에, 이 주제는 꽤 어려울 수 있다.
+    - 나는 당신이 수많은 동적 계획법 문제 예제들이 포함하는 패턴을 확실히 이해할 때 까지 그것들을 계속 찾아볼 것을 권한다.
+    - [ ] 비디오:
+        - Skiena의 비디오는 종종 알아보기 힘든 화이트보드를 사용하기 때문에 이해하기 어려울 수 있다.
         - [ ] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
         - [ ] [Skiena: CSE373 2012 - Lecture 20 - Edit Distance (video)](https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=2749)
         - [ ] [Skiena: CSE373 2012 - Lecture 21 - Dynamic Programming Examples (video)](https://youtu.be/o0V9eYF4UI8?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=406)
