@@ -1206,7 +1206,7 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
     - 당신이 보는 프로그래밍 API 밑은 어떻게 되어있는지 이해할 것
     - 직접 구현할 수 있는가?
 
-- ### String searching & manipulations
+- ### 문자열 검색 & 다루기
     - [ ] [Sedgewick - Suffix Arrays (video)](https://www.youtube.com/watch?v=HKPrVm5FWvg)
     - [ ] [Sedgewick - Substring Search (videos)](https://www.youtube.com/watch?v=2LvvVFCEIv8&list=PLe-ggMe31CTdAdjXB3lIuf2maubzo9t66&index=5)
         - [ ] [1. Introduction to Substring Search](https://www.youtube.com/watch?v=2LvvVFCEIv8&list=PLe-ggMe31CTdAdjXB3lIuf2maubzo9t66&index=5)
@@ -1216,34 +1216,32 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
         - [ ] [5. Rabin-Karp](https://www.youtube.com/watch?v=QzI0p6zDjK4&index=1&list=PLe-ggMe31CTdAdjXB3lIuf2maubzo9t66)
     - [ ] [Search pattern in text (video)](https://www.coursera.org/learn/data-structures/lecture/tAfHI/search-pattern-in-text)
 
-    If you need more detail on this subject, see "String Matching" section in [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
+    이 주제에 대한 더 자세한 정보가 필요하다면 [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)에 있는 "문자열 매칭" 부분을 볼 것.
 
 ---
 
-## System Design, Scalability, Data Handling
-- **You can expect system design questions if you have 4+ years of experience.**
-- Scalability and System Design are very large topics with many topics and resources, since
-      there is a lot to consider when designing a software/hardware system that can scale.
-      Expect to spend quite a bit of time on this.
-- Considerations from Yegge:
-    - scalability
-        - Distill large data sets to single values
-        - Transform one data set to another
-        - Handling obscenely large amounts of data
-    - system design
-        - features sets
-        - interfaces
-        - class hierarchies
-        - designing a system under certain constraints
-        - simplicity and robustness
-        - tradeoffs
-        - performance analysis and optimization
-- [ ] **START HERE**: [System Design from HiredInTech](http://www.hiredintech.com/system-design/)
+## 시스템 디자인, 확장성, 데이터 핸들링
+- **만약 당신이 4년 이상의 경험이 있다면 시스템 디자인에 대한 질문을 받을 수도 있다.**
+- 확장 가능한 소프트웨어/하드웨어를 설계하는 것은 많은 것을 고려해야 하기 때문에, 확장성과 시스템 디자인은 다른 많은 주제를 포함한 아주 큰 주제이다. 여기에 꽤 많은 시간을 소비하게 될 것으로 예상된다.
+- Yegge가 언급한 것들:
+    - 확장성
+        - 큰 데이터 셋을 단일 값들로 압축
+        - 어떤 데이터를 다른 곳으로 보내는 것
+        - 말도안되게 큰 양의 데이터를 다루는 것
+    - 시스템 디자인
+        - 피처 셋
+        - 인터페이스
+        - 클래스 계층
+        - 임의의 제약사항을 지키며 시스템 디자인하기
+        - 단순성과 견고성
+        - 트레이드오프
+        - 퍼포먼스 분석과 최적화
+- [ ] **시작점**: [System Design from HiredInTech](http://www.hiredintech.com/system-design/)
 - [ ] [How Do I Prepare To Answer Design Questions In A Technical Inverview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023)
 - [ ] [8 Things You Need to Know Before a System Design Interview](http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/)
 - [ ] [Algorithm design](http://www.hiredintech.com/algorithm-design/)
 - [ ] [Database Normalization - 1NF, 2NF, 3NF and 4NF (video)](https://www.youtube.com/watch?v=UrYLYV7WSHM)
-- [ ] [System Design Interview](https://github.com/checkcheckzz/system-design-interview) - There are a lot of resources in this one. Look through the articles and examples. I put some of them below.
+- [ ] [System Design Interview](https://github.com/checkcheckzz/system-design-interview) - 여기에는 많은 자료가 있다. 수록된 글과 예제를 훑어보라. 나도 몇 가지를 추가했다.
 - [ ] [How to ace a systems design interview](http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
 - [ ] [Numbers Everyone Should Know](http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/)
 - [ ] [How long does it take to make a context switch?](http://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html)
@@ -1307,34 +1305,34 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
     - [ ] [PlentyOfFish Architecture](http://highscalability.com/plentyoffish-architecture)
     - [ ] [Salesforce Architecture - How They Handle 1.3 Billion Transactions A Day](http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html)
     - [ ] [ESPN's Architecture At Scale - Operating At 100,000 Duh Nuh Nuhs Per Second](http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html)
-    - [ ] See "Messaging, Serialization, and Queueing Systems" way below for info on some of the technologies that can glue services together
-    - [ ] Twitter:
+    - [ ] 서비스를 묶어줄 수 있는 몇몇 기술을 위해서 "메시징, 직렬화, 큐잉 시스템"을 보라.
+    - [ ] 트위터:
         - [O'Reilly MySQL CE 2011: Jeremy Cole, "Big and Small Data at @Twitter" (video)](https://www.youtube.com/watch?v=5cKTP36HVgI)
         - [Timelines at Scale](https://www.infoq.com/presentations/Twitter-Timeline-Scalability)
-    - For even more, see "Mining Massive Datasets" video series in the Video Series section.
-- [ ] Practicing the system design process: Here are some ideas to try working through on paper, each with some documentation on how it was handled in the real world:
-    - review: [System Design from HiredInTech](http://www.hiredintech.com/system-design/)
+    - 나아가서 비디오 시리즈 섹션에 있는 "거대한 데이터셋 마이닝하기" 비디오를 보라.
+- [ ] 시스템 디자인 절차 실습하기. 여기에 실제로는 어떻게 다루어졌는지를 설명하는 문서가 포함된 몇 가지 아이디어가 있다.
+    - 복습: [System Design from HiredInTech](http://www.hiredintech.com/system-design/)
     - [cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/system-design.pdf)
-    - flow:
-        1. Understand the problem and scope:
-            - define the use cases, with interviewer's help
-            - suggest additional features
-            - remove items that interviewer deems out of scope
-            - assume high availability is required, add as a use case
-        2. Think about constraints:
-            - ask how many requests per month
-            - ask how many requests per second (they may volunteer it or make you do the math)
-            - estimate reads vs. writes percentage
-            - keep 80/20 rule in mind when estimating
-            - how much data written per second
-            - total storage required over 5 years
-            - how much data read per second
-        3. Abstract design:
-            - layers (service, data, caching)
-            - infrastructure: load balancing, messaging
-            - rough overview of any key algorithm that drives the service
-            - consider bottlenecks and determine solutions
-    - Exercises:
+    - 절차:
+        1. 문제와 범위를 이해할 것:
+            - 면접관이 유도하는대로 사용 예시를 정의할 것.
+            - 추가적인 기능을 제시.
+            - 면접관의 의도를 넘어가는 내용들은 제거할 것.
+            - 고도의 유용성이 요구될 것으로 가정하고, 사용 예시로 추가하라.
+        2. 제약 사항에 대해 생각할 것:
+            - 월간 얼마나 많은 요청이 발생하는지 질문
+            - 초당 얼마나 많은 요청이 발생하는지 질문 (알려줄 수도 있고 직접 계산하게 시킬 수도 있다.)
+            - 읽기 vs 쓰기의 비율(%)을 추정할 것
+            - 추정할 때는 80/20 규칙을 유념할 것
+            - 초당 얼마 만큼의 데이터가 쓰이는지?
+            - 5 년간 필요한 저장공간의 총량?
+            - 초당 얼마 만큼으 데이터를 읽는지?
+        3. 디자인을 추상화할 것:
+            - 계층 (서비스, 데이터, 캐싱)
+            - 기반 구조: 부하 분산, 메세징
+            - 서비스를 운용하는 모든 주요 알고리즘에 대한 대략적인 개요.
+            - 병목현상에 대한 고려와 해결책 결정
+    - 실습:
         - [Design a CDN network: old article](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2112&context=compsci)
         - [Design a random unique ID generation system](https://blog.twitter.com/2010/announcing-snowflake)
         - [Design an online multiplayer card game](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)
@@ -1427,13 +1425,13 @@ Skiena의 책(아래의 책 섹션 참조)과 인터뷰 책에서 더 많은 그
 
 ## Coding exercises/challenges
 
-Once you've learned your brains out, put those brains to work.
-Take coding challenges every day, as many as you can.
+당신의 머리가 녹슬었다는 것을 알아차렸다면, 뇌가 다시 일하게 만들어라.
+코딩 챌린지를 매일같이 할수있는 한 많이 하라.
 
 - [ ] [How to Find a Solution](https://www.topcoder.com/community/data-science/data-science-tutorials/how-to-find-a-solution/)
 - [ ] [How to Dissect a Topcoder Problem Statement](https://www.topcoder.com/community/data-science/data-science-tutorials/how-to-dissect-a-topcoder-problem-statement/)
 
-Challenge sites:
+챌린지 사이트들:
 - [LeetCode](https://leetcode.com/)
 - [TopCoder](https://www.topcoder.com/)
 - [Project Euler (math-focused)](https://projecteuler.net/index.php?section=problems)
@@ -1447,14 +1445,14 @@ Challenge sites:
 Maybe:
 - [Mock interviewers from big companies](http://www.gainlo.co/)
 
-## Once you're closer to the interview
+## 면접 날이 가까워온다면
 
 - [ ] Cracking The Coding Interview Set 2 (videos):
     - [Cracking The Code Interview](https://www.youtube.com/watch?v=4NIb9l3imAo)
     - [Cracking the Coding Interview - Fullstack Speaker Series](https://www.youtube.com/watch?v=Eg5-tdAwclo)
     - [Ask Me Anything: Gayle Laakmann McDowell (author of Cracking the Coding Interview)](https://www.youtube.com/watch?v=1fqxMuPmGak)
 
-## Your Resume
+## 이력서
 
 - [Ten Tips for a (Slightly) Less Awful Resume](http://steve-yegge.blogspot.co.uk/2007_09_01_archive.html)
 - See Resume prep items in Cracking The Coding Interview and back of Programming Interviews Exposed
