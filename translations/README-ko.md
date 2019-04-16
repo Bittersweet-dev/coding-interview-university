@@ -1476,29 +1476,29 @@ Maybe:
 - 무엇을 배웠는가 [job x / project y]?
 - 무엇이 향상되었는가 [job x / project y]?
 
-## Have questions for the interviewer
+## 면접관에게 질문하기
 
-    Some of mine (I already may know answer to but want their opinion or team perspective):
+    내가 했던 질문들 일부분 (대답은 이미 어느정도 알고 있었지만 면접관의 의견이나 팀의 관점을 알고싶었다.):
 
-- How large is your team?
-- What does your dev cycle look like? Do you do waterfall/sprints/agile?
-- Are rushes to deadlines common? Or is there flexibility?
-- How are decisions made in your team?
-- How many meetings do you have per week?
-- Do you feel your work environment helps you concentrate?
-- What are you working on?
-- What do you like about it?
-- What is the work life like?
+- 당신의 팀은 어느정도 크기입니까?
+- 여러분의 개발 사이클은 어떤 형태입니까? 여러분은 폭포수/스프린트/애자일 모델을 사용합니까?
+- 보통 데드라인에 쫓깁니까, 아니면 어느정도 유도리가 있습니까?
+- 당신의 팀에서는 결정이 어떻게 이루어집니까?
+- 여러분은 한 주에 몇 번 정도 미팅을 합니까?
+- 당신은 당신네 업무 환경이 당신이 집중하는 것을 도와준다고 느낍니까?
+- 당신은 어떤 일을 하고있습니까?
+- 그 일의 어떤 점을 좋아합니까?
+- 직장 생활은 어떻습니까?
 
-## Once You've Got The Job
+## 취직에 성공했다면
 
-Congratulations!
+축하합니다!
 
 - [10 things I wish I knew on my first day at Google](https://medium.com/@moonstorming/10-things-i-wish-i-knew-on-my-first-day-at-google-107581d87286#.livxn7clw)
 
-Keep learning.
+계속 공부합시다.
 
-You're never really done.
+절대로 진짜 끝난건 아닙니다.
 
 ---
 
@@ -1516,47 +1516,47 @@ You're never really done.
 
 ---
 
-## Additional Books
+## 추가적인 책들
 
 - [ ] [The Unix Programming Environment](http://product.half.ebay.com/The-UNIX-Programming-Environment-by-Brian-W-Kernighan-and-Rob-Pike-1983-Other/54385&tg=info)
-    - an oldie but a goodie
+    - 구관이 명관이다.
 - [ ] [The Linux Command Line: A Complete Introduction](https://www.amazon.com/dp/1593273894/)
-    - a modern option
+    - 모던한 선택지
 - [ ] [TCP/IP Illustrated Series](https://en.wikipedia.org/wiki/TCP/IP_Illustrated)
 - [ ] [Head First Design Patterns](https://www.amazon.com/gp/product/0596007124/)
-    - a gentle introduction to design patterns
+    - 디자인 패턴에 대한 친절한 소개
 - [ ] [Design Patterns: Elements of Reusable Object-Oriente​d Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
-    - aka the "Gang Of Four" book, or GOF
-    - the canonical design patterns book
+    - "Gang Of Four" 또는 or GOF 로도 알려져있는 책.
+    - 디자인 패턴의 정규 교과서
 - [ ] [Site Reliability Engineering](https://landing.google.com/sre/book.html)
     - [Site Reliability Engineering: How Google Runs Production Systems](https://landing.google.com/sre/)
 - [ ] [UNIX and Linux System Administration Handbook, 4th Edition](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0131480057/)
 
-## Additional Learning
+## 추가적으로 배울 것들
 
-- ### Compilers
+- ### 컴파일러
     - [ ] [How a Compiler Works in ~1 minute (video)](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
     - [ ] [Harvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
     - [ ] [C++ (video)](https://www.youtube.com/watch?v=twodd1KFfGk)
     - [ ] [Understanding Compiler Optimization (C++) (video)](https://www.youtube.com/watch?v=FnGCDLhaxKU)
 
-- ### Floating Point Numbers
+- ### 부동소수점 수
     - [ ] simple 8-bit: [Representation of Floating Point Numbers - 1 (video - there is an error in calculations - see video description)](https://www.youtube.com/watch?v=ji3SfClm8TU)
     - [ ] 32 bit: [IEEE754 32-bit floating point binary (video)](https://www.youtube.com/watch?v=50ZYcZebIec)
 
-- ### Unicode
+- ### 유니코드
     - [ ] [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets]( http://www.joelonsoftware.com/articles/Unicode.html)
     - [ ] [What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](http://kunststube.net/encoding/)
 
-- ### Endianness
+- ### 엔디안
     - [ ] [Big And Little Endian](https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Data/endian.html)
     - [ ] [Big Endian Vs Little Endian (video)](https://www.youtube.com/watch?v=JrNF0KRAlyo)
     - [ ] [Big And Little Endian Inside/Out (video)](https://www.youtube.com/watch?v=oBSuXP-1Tc0)
-        - Very technical talk for kernel devs. Don't worry if most is over your head.
-        - The first half is enough.
+        - 커널 개발에 대한 굉장히 기술적인 이야기. 대부분의 이야기를 알아듣지 못해도 너무 염려하지 마라.
+        - 앞쪽 절반 정도면 충분하다.
 
-- ### Emacs and vi(m)
-    - suggested by Yegge, from an old Amazon recruiting post: Familiarize yourself with a unix-based code editor
+- ### Emacs 와 vi(m)
+    - Yegge가 오래전 Amazon 채용 포스트에서 제안한 것: 유닉스 기반의 코드 에디터에 익숙해져라.
     - vi(m):
         - [Editing With vim 01 - Installation, Setup, and The Modes (video)](https://www.youtube.com/watch?v=5givLEMcINQ&index=1&list=PL13bz4SHGmRxlZVmWQ9DvXo1fEg4UdGkr)
         - [VIM Adventures](http://vim-adventures.com/)
@@ -1576,8 +1576,8 @@ You're never really done.
         - [Writing C Programs With Emacs](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Writing_C_programs_with_Emacs)
         - [(maybe) Org Mode In Depth: Managing Structure (video)](https://www.youtube.com/watch?v=nsGYet02bEk)
 
-- ### Unix command line tools
-    - suggested by Yegge, from an old Amazon recruiting post. I filled in the list below from good tools.
+- ### 유닉스 커맨드 라인 툴들
+    - Yegge가 오래전 Amazon 채용 포스트에서 제안한 것: 나는 아래의 목록을 괜찮은 툴들로 채워넣었다.
     - [ ] bash
     - [ ] cat
     - [ ] grep
@@ -1590,24 +1590,24 @@ You're never really done.
     - [ ] [strace](https://en.wikipedia.org/wiki/Strace)
     - [ ] [tcpdump](https://danielmiessler.com/study/tcpdump/)
 
-- ### Information theory (videos)
+- ### 정보 이론 (비디오)
     - [ ] [Khan Academy](https://www.khanacademy.org/computing/computer-science/informationtheory)
-    - [ ] more about Markov processes:
+    - [ ] 마르코프 과정에 대한 추가적인 내용:
         - [ ] [Core Markov Text Generation](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/waxgx/core-markov-text-generation)
         - [ ] [Core Implementing Markov Text Generation](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/gZhiC/core-implementing-markov-text-generation)
         - [ ] [Project = Markov Text Generation Walk Through](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/EUjrq/project-markov-text-generation-walk-through)
-    - See more in MIT 6.050J Information and Entropy series below.
+    - 아래의 MIT 6.050J Information and Entropy 시리즈 내용을 보라.
 
-- ### Parity & Hamming Code (videos)
+- ### 패리티 & 해밍 부호 (비디오)
     - [ ] [Intro](https://www.youtube.com/watch?v=q-3BctoUpHE)
     - [ ] [Parity](https://www.youtube.com/watch?v=DdMcAUlxh1M)
-    - [ ] Hamming Code:
+    - [ ] 해밍 부호:
         - [Error detection](https://www.youtube.com/watch?v=1A_NcXxdoCc)
         - [Error correction](https://www.youtube.com/watch?v=JAMLuxdHH8o)
     - [ ] [Error Checking](https://www.youtube.com/watch?v=wbH2VxzmoZk)
 
-- ### Entropy
-    - also see videos below
+- ### 엔트로피
+    - 마찬가지로 아래 비디오를 보라.
     - make sure to watch information theory videos first
     - [ ] [Information Theory, Claude Shannon, Entropy, Redundancy, Data Compression & Bits (video)](https://youtu.be/JnJq3Py0dyM?t=176)
 
