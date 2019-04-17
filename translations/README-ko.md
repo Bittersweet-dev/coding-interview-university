@@ -1608,18 +1608,18 @@ Maybe:
 
 - ### 엔트로피
     - 마찬가지로 아래 비디오를 보라.
-    - make sure to watch information theory videos first
+    - 정보 이론 비디오를 먼저 볼 것
     - [ ] [Information Theory, Claude Shannon, Entropy, Redundancy, Data Compression & Bits (video)](https://youtu.be/JnJq3Py0dyM?t=176)
 
-- ### Cryptography
-    - also see videos below
-    - make sure to watch information theory videos first
+- ### 암호학
+    - 마찬가지로 아래 비디오를 보라.
+    - 정보 이론 비디오를 먼저 볼 것
     - [ ] [Khan Academy Series](https://www.khanacademy.org/computing/computer-science/cryptography)
     - [ ] [Cryptography: Hash Functions](https://www.youtube.com/watch?v=KqqOXndnvic&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=30)
     - [ ] [Cryptography: Encryption](https://www.youtube.com/watch?v=9TNI2wHmaeI&index=31&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
 
-- ### Compression
-    - make sure to watch information theory videos first
+- ### 압축
+    - 정보 이론 비디오를 먼저 볼 것
     - [ ] Computerphile (videos):
         - [ ] [Compression](https://www.youtube.com/watch?v=Lto-ajuqW3w)
         - [ ] [Entropy in Compression](https://www.youtube.com/watch?v=M5c_RFKVkko)
@@ -1630,9 +1630,9 @@ Maybe:
     - [ ] [Compressor Head videos](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)
     - [ ] [(optional) Google Developers Live: GZIP is not enough!](https://www.youtube.com/watch?v=whGwm0Lky2s)
 
-- ### Networking
-    - **if you have networking experience or want to be a systems engineer, expect questions**
-    - otherwise, this is just good to know
+- ### 네트워크
+    - **네트워크 분야 경험이 있거나 시스템 엔지니어가 되려고 한다면 질문이 예상됨.**
+    - 그렇지 않다면 알아두면 좋은 정도임
     - [ ] [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
     - [ ] [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
     - [ ] [TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)
@@ -1644,7 +1644,7 @@ Maybe:
     - [ ] [Video Series (21 videos)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
     - [ ] [Subnetting Demystified - Part 5 CIDR Notation](https://www.youtube.com/watch?v=t5xYI0jzOf4)
 
-- ### Computer Security
+- ### 컴퓨터 보안
     - [MIT (23 videos)](https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
         - [ ] [Introduction, Threat Models](https://www.youtube.com/watch?v=GqmQg-cszw4&index=1&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
         - [ ] [Control Hijacking Attacks](https://www.youtube.com/watch?v=6bwzNg5qQ0o&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&index=2)
@@ -1659,18 +1659,18 @@ Maybe:
         - [ ] [Network Protocols](https://www.youtube.com/watch?v=QOtA76ga_fY&index=12&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
         - [ ] [Side-Channel Attacks](https://www.youtube.com/watch?v=PuVMkSEcPiI&index=15&list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh)
 
-- ### Garbage collection
+- ### 가비지 콜렉션
     - [ ] [Garbage collection (Java); Augmenting data str (video)](https://www.youtube.com/watch?v=StdfeXaKGEc&list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd&index=25)
     - [ ] [Compilers (video)](https://www.youtube.com/playlist?list=PLO9y7hOkmmSGTy5z6HZ-W4k2y8WXF7Bff)
     - [ ] [GC in Python (video)](https://www.youtube.com/watch?v=iHVs_HkjdmI)
     - [ ] [Deep Dive Java: Garbage Collection is Good!](https://www.infoq.com/presentations/garbage-collection-benefits)
     - [ ] [Deep Dive Python: Garbage Collection in CPython (video)](https://www.youtube.com/watch?v=P-8Z0-MhdQs&list=PLdzf4Clw0VbOEWOS_sLhT_9zaiQDrS5AR&index=3)
 
-- ### Parallel Programming
+- ### 벙렬 컴퓨팅
     - [ ] [Coursera (Scala)](https://www.coursera.org/learn/parprog1/home/week/1)
     - [ ] [Efficient Python for High Performance Parallel Computing (video)](https://www.youtube.com/watch?v=uY85GkaYzBk)
 
-- ### Messaging, Serialization, and Queueing Systems
+- ### 메시징, 직렬화, 큐잉 시스템
     - [ ] [Thrift](https://thrift.apache.org/)
         - [Tutorial](http://thrift-tutorial.readthedocs.io/en/latest/intro.html)
     - [ ] [Protocol Buffers](https://developers.google.com/protocol-buffers/)
@@ -1699,8 +1699,8 @@ Maybe:
     - [ ] [Divide & Conquer: FFT (video)](https://www.youtube.com/watch?v=iTMn0Kt18tg&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=4)
     - [ ] [Understanding The FFT](http://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/)
 
-- ### Bloom Filter
-    - Given a Bloom filter with m bits and k hashing functions, both insertion and membership testing are O(k)
+- ### 블룸 필터
+    - m 개의 비트와 k 라는 해시 함수가 주어졌을 때, 블룸 필터의 삽입과 이미 삽입됐는지 확인하는 데에 O(k).
     - [Bloom Filters](https://www.youtube.com/watch?v=-SuTGoFYjZs)
     - [Bloom Filters | Mining of Massive Datasets | Stanford University](https://www.youtube.com/watch?v=qBTdukbzc78)
     - [Tutorial](http://billmill.org/bloomfilter-tutorial/)
@@ -1710,8 +1710,8 @@ Maybe:
     - [How To Count A Billion Distinct Objects Using Only 1.5KB Of Memory](http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html)
 
 - ### Locality-Sensitive Hashing
-    - used to determine the similarity of documents
-    - the opposite of MD5 or SHA which are used to determine if 2 documents/strings are exactly the same.
+    - 문서의 유사도를 결정하기 위해 쓰임
+    - 문서나 문자열이 정확하게 같은지 판단하는 MD5나 SHA와 반대되는 개념.
     - [Simhashing (hopefully) made simple](http://ferd.ca/simhashing-hopefully-made-simple.html)
 
 - ### van Emde Boas Trees
@@ -1721,10 +1721,9 @@ Maybe:
 - ### Augmented Data Structures
     - [ ] [CS 61B Lecture 39: Augmenting Data Structures](https://youtu.be/zksIj9O8_jc?list=PL4BBB74C7D2A1049C&t=950)
 
-- ### Tries
-    - Note there are different kinds of tries. Some have prefixes, some don't, and some use string instead of bits
-        to track the path.
-    - I read through code, but will not implement.
+- ### 트라이(Trie)
+    - 서로 다른 종류의 트라이가 있음에 주의. Note there are different kinds of tries. Prefix가 있는 것도 있고 없는 것도 있으며 어떤 것은 경로를 추적하기 위해 비트 대신 문자열을 사용한다.
+    - 나는 코드를 읽어봤지만 구현하지는 않을 것이다.
     - [ ] [Sedgewick - Tries (3 videos)](https://www.youtube.com/playlist?list=PLe-ggMe31CTe9IyG9MB8vt5xUJeYgOYRQ)
         - [ ] [1. R Way Tries](https://www.youtube.com/watch?v=buq2bn8x3Vo&index=3&list=PLe-ggMe31CTe9IyG9MB8vt5xUJeYgOYRQ)
         - [ ] [2. Ternary Search Tries](https://www.youtube.com/watch?v=LelV-kkYMIg&index=2&list=PLe-ggMe31CTe9IyG9MB8vt5xUJeYgOYRQ)
@@ -1739,88 +1738,70 @@ Maybe:
     - [ ] [Stanford Lecture (real world use case) (video)](https://www.youtube.com/watch?v=TJ8SkcUSdbU)
     - [ ] [MIT, Advanced Data Structures, Strings (can get pretty obscure about halfway through)](https://www.youtube.com/watch?v=NinWEPPrkDQ&index=16&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
 
-- ### Balanced search trees
-    - Know least one type of balanced binary tree (and know how it's implemented):
-    - "Among balanced search trees, AVL and 2/3 trees are now passé, and red-black trees seem to be more popular.
-        A particularly interesting self-organizing data structure is the splay tree, which uses rotations
-        to move any accessed key to the root." - Skiena
-    - Of these, I chose to implement a splay tree. From what I've read, you won't implement a
-        balanced search tree in your interview. But I wanted exposure to coding one up
-        and let's face it, splay trees are the bee's knees. I did read a lot of red-black tree code.
-        - splay tree: insert, search, delete functions
-        If you end up implementing red/black tree try just these:
-        - search and insertion functions, skipping delete
-    - I want to learn more about B-Tree since it's used so widely with very large data sets.
+- ### 균형 탐색 트리
+    - 최소한 하나의 균형 이진 트리에 해당하는 트리를 숙지해둬라(구현할 줄도 알아야 함):
+    - "균형 탐색 트리 중에서, AVL과 2/3 트리는 유행이 지났다. 레드-블랙 트리가 더 유명하다.
+        특히 흥미로운 자기-조직적인 데이터 구조로 루트에서 다른 키로 접근하기 위해 회전을 사용하는 splay 트리가 있다." - Skiena
+    - 이 중에서 나는 splay tree를 구현하기로 했다. 내가 읽은 바에 의하면, 당신은 면접에서 균형 탐색 트리를 구현하지는 않을 것이다. 하지만 나는 뭔가를 구현하는 상황에 노출되고 그 상황에 맞서고 싶었고, splay tree가 아주 매력적이었다. 또 레드-블랙 트리 코드를 아주 많이 읽었다.
+        - splay tree: 삽입, 탐색, 삭제 기능
+        당신이 레드-블랙 트리 구현을 끝마쳤다면 이것을 시도해보라:
+        - 탐색 및 삽입 기능, 삭제는 논외
+    - B-Tree가 큰 데이터 셋에서 널리 쓰이기 때문에 B-Tree에 대해 더 배우고자 했다.
     - [ ] [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 
     - [ ] **AVL trees**
-        - In practice:
-            From what I can tell, these aren't used much in practice, but I could see where they would be:
-            The AVL tree is another structure supporting O(log n) search, insertion, and removal. It is more rigidly
-            balanced than red–black trees, leading to slower insertion and removal but faster retrieval. This makes it
-            attractive for data structures that may be built once and loaded without reconstruction, such as language
-            dictionaries (or program dictionaries, such as the opcodes of an assembler or interpreter).
+        - 실제에서:
+            내가 말할 수 있는 것은, AVL 트리가 실제로 많이 쓰이지는 않지만 나는 이게 어디에 쓰여야 하는지는 알 수 있다.
+            AVL 트리는 탐색, 삽입, 삭제에 O(log n)의 성능을 내는 또 하나의 구조이다. AVL 트리는 레드-블랙 트리보다 강하게 균형잡혀 있기 때문에 삽입과 삭제는 좀 더 느리지만 탐색은 좀 더 빠르다. 이런 특성 때문에 사전과 같이 한번 만들어지고 나면 재구성되는 일 없이 쓰이는 자료 구조에 어울린다(또는 어셈블러나 인터프리터의 명령 코드에 대한 프로그램 사전 같은 것이 해당됨).
         - [ ] [MIT AVL Trees / AVL Sort (video)](https://www.youtube.com/watch?v=FNeL18KsWPc&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=6)
         - [ ] [AVL Trees (video)](https://www.coursera.org/learn/data-structures/lecture/Qq5E0/avl-trees)
         - [ ] [AVL Tree Implementation (video)](https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation)
         - [ ] [Split And Merge](https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge)
 
     - [ ] **Splay trees**
-        - In practice:
-            Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors,
-            data compression, ropes (replacement of string used for long text strings), in Windows NT (in the virtual memory,
-            networking and file system code) etc.
+        - 실제에서:
+            Splay tree는 주로 캐시, 메모리 할당, 라우터, 가비지 콜렉터, 데이터 압축, 로프(길이가 긴 문자열을 대체하는 자료구조), Windows NT(가상 메모리, 네트워크, 파일 시스템 코드) 등에서 쓰인다.
         - [ ] [CS 61B: Splay Trees (video)](https://www.youtube.com/watch?v=Najzh1rYQTo&index=23&list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd)
         - [ ] MIT Lecture: Splay Trees:
-            - Gets very mathy, but watch the last 10 minutes for sure.
+            - 내용이 굉장히 수학적이지만 뒤 쪽 10분 정도는 꼭 볼 것.
             - [Video](https://www.youtube.com/watch?v=QnPl_Y6EqMo)
 
-    - [ ] **Red/black trees**
-        - these are a translation of a 2-3 tree (see below)
-        - In practice:
-            Red–black trees offer worst-case guarantees for insertion time, deletion time, and search time.
-            Not only does this make them valuable in time-sensitive applications such as real-time applications,
-            but it makes them valuable building blocks in other data structures which provide worst-case guarantees;
-            for example, many data structures used in computational geometry can be based on red–black trees, and
-            the Completely Fair Scheduler used in current Linux kernels uses red–black trees. In the version 8 of Java,
-            the Collection HashMap has been modified such that instead of using a LinkedList to store identical elements with poor
-            hashcodes, a Red-Black tree is used.
+    - [ ] **레드-블랙 트리**
+        - 이것은 2-3 트리의 변형이다 (아래를 보라).
+        - 실제에서:
+            레드-블랙 트리는 삽입, 삭제, 탐색에서 최악의 경우일 때의 성능을 보장한다.
+            이러한 보장은 리얼타임 어플리케이션 같이 시간이 민감한 곳에서 중요할 뿐 만 아니라, 다른 최악의 경우를 보장하는 자료 구조의 구성 요소로 쓰이게끔 한다.
+            예를 들어, 계산 기하학에 쓰이는 많은 자료 구조들이 레드-블랙 트리로 만들어질 수 있고, 현재 리눅스 커널의 Completely Fair Scheduler도 레드-블랙 트리를 사용한다. 자바 버전 8의 경우에는 해시맵 컬렉션이 해시코드를 개별 요소로 링크드 리스트에 저장하던 방식에서 레드-블랙 트리를 사용하는 방식으로 변경되었다.
         - [ ] [Aduni - Algorithms - Lecture 4 (link jumps to starting point) (video)](https://youtu.be/1W3x0f_RmUo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3871)
         - [ ] [Aduni - Algorithms - Lecture 5 (video)](https://www.youtube.com/watch?v=hm2GHwyKF1o&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=5)
         - [ ] [Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
         - [ ] [An Introduction To Binary Search And Red Black Tree](https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-binary-search-and-red-black-trees/)
 
-    - [ ] **2-3 search trees**
-        - In practice:
-            2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees).
-        - You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees.
+    - [ ] **2-3 탐색 트리**
+        - 실제에서:
+            2-3 트리는 탐색이 느려진 대신 삽입이 빨라졌다. (AVL 트리에 비해서 높이가 더 높을 수 있기 때문).
+        - 2-3 트리는 구현할 때 다른 타입의 노드를 포함하기 때문에, 당신은 2-3 트리를 거의 사용하지 않아야 한다. 대신 사람들은 레드-블랙 트리를 사용하곤 한다.
         - [ ] [23-Tree Intuition and Definition (video)](https://www.youtube.com/watch?v=C3SsdUqasD4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=2)
         - [ ] [Binary View of 23-Tree](https://www.youtube.com/watch?v=iYvBtGKsqSg&index=3&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
         - [ ] [2-3 Trees (student recitation) (video)](https://www.youtube.com/watch?v=TOb1tuEZ2X4&index=5&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
 
-    - [ ] **2-3-4 Trees (aka 2-4 trees)**
-        - In practice:
-            For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion
-            operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an
-            important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce
-            2-4 trees just before red–black trees, even though **2-4 trees are not often used in practice**.
+    - [ ] **2-3-4 트리 (2-4 트리로도 알려짐)**
+        - 실제에서:
+            모든 2-4 트리에는 같은 순서로 데이터가 배치된 상응하는 레드-블랙 트리가 존재한다. 2-4 트리에서의 삽입과 삭제는 레드-블랙 트리에서의 색 바꾸기와 회전과 동일하다. 이러한 점이 2-4 트리를 레드-블랙 트리의 밑에 깔려있는 로직을 이해할 수 있게 도와주는 중요한 도구로 만들며, 다른 알고리즘 입문 교과서에서 2-4 트리를 레드-블랙 트리의 바로 앞에서 소개하는 이유이다. **비록 2-4 트리가 실제로는 자주 쓰이지 않더라도 말이다**.
         - [ ] [CS 61B Lecture 26: Balanced Search Trees (video)](https://www.youtube.com/watch?v=zqrqYXkth6Q&index=26&list=PL4BBB74C7D2A1049C)
         - [ ] [Bottom Up 234-Trees (video)](https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
         - [ ] [Top Down 234-Trees (video)](https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5)
 
-    - [ ] **N-ary (K-ary, M-ary) trees**
-        - note: the N or K is the branching factor (max branches)
-        - binary trees are a 2-ary tree, with branching factor = 2
-        - 2-3 trees are 3-ary
+    - [ ] **N-ary (K-ary, M-ary) 트리**
+        - 참고: N 이나 K는 가지 수를 가리키는 값임. (최대 가지 수)
+        - 이진 트리는 2-ary 트리임. (가지 수 2)
+        - 2-3 트리는 3-ary 트리임.
         - [ ] [K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)
 
-    - [ ] **B-Trees**
-        - fun fact: it's a mystery, but the B could stand for Boeing, Balanced, or Bayer (co-inventor)
-        - In Practice:
-            B-Trees are widely used in databases. Most modern filesystems use B-trees (or Variants). In addition to
-            its use in databases, the B-tree is also used in filesystems to allow quick random access to an arbitrary
-            block in a particular file. The basic problem is turning the file block i address into a disk block
-            (or perhaps to a cylinder-head-sector) address.
+    - [ ] **B-트리**
+        - 재밌는 사실: 신기하게도 B는 Boeing, Balanced, Bayer(창시자 이름) 등으로 해석할 수 있다.
+        - 실제에서:
+            B-트리는 데이터베이스에서 널리 쓰인다. 대부분의 현대 파일시스템은 비-트리(또는 그 변형)를 사용한다. 데이터베이스에서의 쓰임 뿐 만 아니라, 파일시스템에서 특정 파일의 임의의 블록에 빠르게 접근하는 데에도 쓰인다. 기본적인 문제는 파일 블록의 주소 i를 디스크 블록(또는 cylinder-head-sector) 의 주소로 변환하는 것이다.
         - [ ] [B-Tree](https://en.wikipedia.org/wiki/B-tree)
         - [ ] [Introduction to B-Trees (video)](https://www.youtube.com/watch?v=I22wEC1tTGo&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=6)
         - [ ] [B-Tree Definition and Insertion (video)](https://www.youtube.com/watch?v=s3bCdZGrgpA&index=7&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
